@@ -1,209 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.3 on darwin)" generated="2025-10-26T19:59:03.878196" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.3 on darwin)" generated="2025-10-27T14:12:31.024371" rpa="false" schemaversion="5">
 <suite id="s1" name="cancelarInscricao testes" source="/Users/annasantos/Documents/github/teste-automatizados/Cenário - Cancelar inscrição em evento/cancelarInscricao_testes.robot">
 <test id="s1-t1" name="CT1 - Realizar o cancelamento de inscrição em um evento" line="7">
 <kw name="Abrir navegador" owner="cancelarInscricao_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:03.970088" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php?common=2'.</msg>
+<msg time="2025-10-27T14:12:32.536938" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php?common=2'.</msg>
 <arg>${URL}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-26T19:59:03.969983" elapsed="1.039465"/>
+<status status="PASS" start="2025-10-27T14:12:32.536828" elapsed="9.779413"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.009869" elapsed="0.502378"/>
+<status status="PASS" start="2025-10-27T14:12:42.316892" elapsed="0.344097"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:03.969694" elapsed="1.542888"/>
+<status status="PASS" start="2025-10-27T14:12:32.536541" elapsed="10.124674"/>
 </kw>
 <kw name="Efetuar login" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.513487" elapsed="0.014307"/>
+<status status="PASS" start="2025-10-27T14:12:42.661855" elapsed="0.028505"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:05.528066" level="INFO">Typing text 'annaquezia@email.com' into text field 'id=email'.</msg>
+<msg time="2025-10-27T14:12:42.690632" level="INFO">Typing text 'annaquezia@email.com' into text field 'id=email'.</msg>
 <arg>${EMAIL_INPUT}</arg>
 <arg>${USER_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.527901" elapsed="0.067394"/>
+<status status="PASS" start="2025-10-27T14:12:42.690468" elapsed="0.085460"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:05.595545" level="INFO">Typing text '12345678' into text field 'id=password'.</msg>
+<msg time="2025-10-27T14:12:42.776281" level="INFO">Typing text '12345678' into text field 'id=password'.</msg>
 <arg>${SENHA_INPUT}</arg>
 <arg>${USER_SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.595405" elapsed="0.033428"/>
+<status status="PASS" start="2025-10-27T14:12:42.776055" elapsed="0.034373"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:05.778183" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:42.928643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.628972" elapsed="0.149270"/>
+<status status="PASS" start="2025-10-27T14:12:42.810551" elapsed="0.118154"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:05.778440" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<msg time="2025-10-27T14:12:42.928911" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
 <arg>${ENTRAR_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:05.778325" elapsed="0.298467"/>
+<status status="PASS" start="2025-10-27T14:12:42.928792" elapsed="0.303486"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:05.513131" elapsed="0.563734"/>
+<status status="PASS" start="2025-10-27T14:12:42.661598" elapsed="0.570765"/>
 </kw>
 <kw name="Selecionar &quot;Eventos&quot;" owner="cancelarInscricao_resources">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${EVENTOS_BUTTON}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.077163" elapsed="0.005162"/>
+<status status="PASS" start="2025-10-27T14:12:43.232848" elapsed="0.008451"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${EVENTOS_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.082410" elapsed="0.265647"/>
+<status status="PASS" start="2025-10-27T14:12:43.241411" elapsed="0.276411"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:06.349328" level="INFO">Clicking button 'xpath=//aside[@id="sidebar"]//button[@data-bs-target="#eventos-collapse"]'.</msg>
+<msg time="2025-10-27T14:12:43.519024" level="INFO">Clicking button 'xpath=//aside[@id="sidebar"]//button[@data-bs-target="#eventos-collapse"]'.</msg>
 <arg>${EVENTOS_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.348624" elapsed="0.048320"/>
+<status status="PASS" start="2025-10-27T14:12:43.518407" elapsed="0.054920"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EVENTOS_COLLAPSE}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.397063" elapsed="0.229619"/>
+<status status="PASS" start="2025-10-27T14:12:43.573454" elapsed="0.008085"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:06.872371" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:44.155587" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.627049" elapsed="0.245381"/>
+<status status="PASS" start="2025-10-27T14:12:43.581637" elapsed="0.574011"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:06.077003" elapsed="0.795475"/>
+<status status="PASS" start="2025-10-27T14:12:43.232642" elapsed="0.923055"/>
 </kw>
 <kw name="Selecionar &quot;Meus eventos&quot;" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EVENTOS_COLLAPSE}.show</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.872736" elapsed="0.007112"/>
+<status status="PASS" start="2025-10-27T14:12:44.155957" elapsed="0.007597"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${MEUS_EVENTOS_BUTTON}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.879914" elapsed="0.006710"/>
+<status status="PASS" start="2025-10-27T14:12:44.163632" elapsed="0.007099"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:07.074901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:44.286305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:06.886688" elapsed="0.188270"/>
+<status status="PASS" start="2025-10-27T14:12:44.170805" elapsed="0.115555"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:07.075157" level="INFO">Clicking element 'xpath=//aside[@id="sidebar"]//div[@id="eventos-collapse"]//a[normalize-space(.)="Meus eventos"]'.</msg>
+<msg time="2025-10-27T14:12:44.286550" level="INFO">Clicking element 'xpath=//aside[@id="sidebar"]//div[@id="eventos-collapse"]//a[normalize-space(.)="Meus eventos"]'.</msg>
 <arg>${MEUS_EVENTOS_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.075044" elapsed="0.079377"/>
+<status status="PASS" start="2025-10-27T14:12:44.286440" elapsed="0.129982"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:06.872613" elapsed="0.281885"/>
+<status status="PASS" start="2025-10-27T14:12:44.155827" elapsed="0.260682"/>
 </kw>
 <kw name="Selecionar ir para a área de confirmação" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${AREA_CONFIRMACAO_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.155202" elapsed="0.023799"/>
+<status status="PASS" start="2025-10-27T14:12:44.416969" elapsed="0.017234"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${AREA_CONFIRMACAO_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.179218" elapsed="0.269745"/>
+<status status="PASS" start="2025-10-27T14:12:44.434351" elapsed="0.283438"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:07.656494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:44.883699" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.449434" elapsed="0.207123"/>
+<status status="PASS" start="2025-10-27T14:12:44.718263" elapsed="0.165497"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:07.656751" level="INFO">Clicking element 'xpath=//div[contains(@class,"card-body")][.//p[normalize-space(.)="31/10/2025 às 12:30"]]//a[contains(@class,"btn") and contains(normalize-space(.),"Ir para área da confirmação")]'.</msg>
+<msg time="2025-10-27T14:12:44.883957" level="INFO">Clicking element 'xpath=//div[contains(@class,"card-body")][.//p[normalize-space(.)="31/10/2025 às 12:30"]]//a[contains(@class,"btn") and contains(normalize-space(.),"Ir para área da confirmação")]'.</msg>
 <arg>${AREA_CONFIRMACAO_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.656640" elapsed="0.047678"/>
+<status status="PASS" start="2025-10-27T14:12:44.883845" elapsed="0.055673"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:07.155009" elapsed="0.549383"/>
+<status status="PASS" start="2025-10-27T14:12:44.416779" elapsed="0.522806"/>
 </kw>
 <kw name="Selecionar &quot;Não posso ir&quot;" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${NAO_POSSO_IR_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.704671" elapsed="0.009664"/>
+<status status="PASS" start="2025-10-27T14:12:44.939874" elapsed="0.008668"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:08.167124" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:45.245359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:07.714534" elapsed="0.453155"/>
+<status status="PASS" start="2025-10-27T14:12:44.948724" elapsed="0.296699"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:08.168709" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="Não posso ir"]'.</msg>
+<msg time="2025-10-27T14:12:45.245617" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="Não posso ir"]'.</msg>
 <arg>${NAO_POSSO_IR_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:08.168261" elapsed="0.041766"/>
+<status status="PASS" start="2025-10-27T14:12:45.245509" elapsed="0.031711"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:07.704529" elapsed="0.505690"/>
+<status status="PASS" start="2025-10-27T14:12:44.939730" elapsed="0.337583"/>
 </kw>
 <kw name="Selecionar &quot;Sim cancelar&quot;" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${CANCELAR_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:08.210801" elapsed="0.226952"/>
+<status status="PASS" start="2025-10-27T14:12:45.277658" elapsed="0.231755"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:09.155558" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:45.812421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:08.437957" elapsed="0.717664"/>
+<status status="PASS" start="2025-10-27T14:12:45.509615" elapsed="0.302868"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:09.155824" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="Sim, cancelar"]'.</msg>
+<msg time="2025-10-27T14:12:45.812690" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="Sim, cancelar"]'.</msg>
 <arg>${CANCELAR_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.155707" elapsed="0.082830"/>
+<status status="PASS" start="2025-10-27T14:12:45.812574" elapsed="0.075044"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:08.210596" elapsed="1.028009"/>
+<status status="PASS" start="2025-10-27T14:12:45.277501" elapsed="0.610249"/>
 </kw>
 <kw name="Mensagem de sucesso" owner="cancelarInscricao_resources">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${MENSAGEM_SUCESSO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.238897" elapsed="0.018250"/>
+<status status="PASS" start="2025-10-27T14:12:45.888437" elapsed="0.031667"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:09.424556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:46.060249" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.257273" elapsed="0.167346"/>
+<status status="PASS" start="2025-10-27T14:12:45.920223" elapsed="0.140088"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:09.429697" level="INFO">Element 'id:toastBom' is displayed.</msg>
+<msg time="2025-10-27T14:12:46.065604" level="INFO">Element 'id:toastBom' is displayed.</msg>
 <arg>${MENSAGEM_SUCESSO}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.424707" elapsed="0.005030"/>
+<status status="PASS" start="2025-10-27T14:12:46.060397" elapsed="0.005245"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:09.238744" elapsed="0.191038"/>
+<status status="PASS" start="2025-10-27T14:12:45.888067" elapsed="0.177623"/>
 </kw>
 <kw name="Fechar navegador" owner="cancelarInscricao_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-26T19:59:09.590320" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T14:12:46.193431" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.430071" elapsed="0.160307"/>
+<status status="PASS" start="2025-10-27T14:12:46.066011" elapsed="0.127480"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-26T19:59:09.590457" elapsed="0.085496"/>
+<status status="PASS" start="2025-10-27T14:12:46.193573" elapsed="0.088829"/>
 </kw>
-<status status="PASS" start="2025-10-26T19:59:09.429948" elapsed="0.246090"/>
+<status status="PASS" start="2025-10-27T14:12:46.065877" elapsed="0.216612"/>
 </kw>
 <doc>Esse teste realiza o cancelamento de inscrição em um evento</doc>
 <tag>cancelar_inscricao</tag>
-<status status="PASS" start="2025-10-26T19:59:03.969307" elapsed="5.706820"/>
+<status status="PASS" start="2025-10-27T14:12:32.536163" elapsed="13.746413"/>
 </test>
-<status status="PASS" start="2025-10-26T19:59:03.878734" elapsed="5.797738"/>
+<status status="PASS" start="2025-10-27T14:12:31.027915" elapsed="15.254981"/>
 </suite>
 <statistics>
 <total>
