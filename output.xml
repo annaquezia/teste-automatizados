@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-10-27T10:29:08.615969" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste-Automatizados" source="/Users/otavioaugusto/PUCPR/teste-automatizados">
+<suite id="s1-s1" name="Cenário: Se inscrever em eventos" source="/Users/otavioaugusto/PUCPR/teste-automatizados/Cenário: Se inscrever em eventos">
+<suite id="s1-s1-s1" name="Evento Test" source="/Users/otavioaugusto/PUCPR/teste-automatizados/Cenário: Se inscrever em eventos/evento_test.robot">
+<test id="s1-s1-s1-t1" name="Caso de teste 01: Realizar a inscrição em um evento" line="7">
+<kw name="Configurar pasta de screenshots" owner="common">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${pasta}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-10-27T10:29:08.740878" elapsed="0.000242"/>
+</kw>
+<arg>Cenário: Se inscrever em eventos/Screenshots/Teste_01</arg>
+<status status="PASS" start="2025-10-27T10:29:08.740289" elapsed="0.000899"/>
+</kw>
+<kw name="Realizar login com credenciais corretas" owner="common">
+<kw name="Abrir navegador e acessar página de login" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:08.742369" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/PROJETO/index.php?common=2'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T10:29:08.742218" elapsed="0.864069"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T10:29:09.606684" elapsed="0.370362"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:09.987401" level="INFO">Current page contains text 'Login'.</msg>
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-27T10:29:09.977404" elapsed="0.010067"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:08.741603" elapsed="1.245949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:09.987984" level="INFO">Typing text 'admin@acalento.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${USUARIO_VALIDO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T10:29:09.987654" elapsed="0.093215"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:10.081213" level="INFO">Typing text 'fera4321' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${SENHA_VALIDA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.081026" elapsed="0.032297"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:10.113639" level="INFO">Clicking element 'class:btn-primary'.</msg>
+<arg>class:btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.113491" elapsed="0.028659"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-27T10:29:10.644167" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.142294" elapsed="0.502525"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:10.678705" level="INFO">Page title is 'Acalento | Home'.</msg>
+<arg>Acalento | Home</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.645792" elapsed="0.033190"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:08.741401" elapsed="1.937853"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:10.841909" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_48.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.680888" elapsed="0.161113"/>
+</kw>
+<arg>Evidência_48.png</arg>
+<status status="PASS" start="2025-10-27T10:29:10.680166" elapsed="0.161904"/>
+</kw>
+<kw name="Selecionar dropdown de &quot;Eventos&quot;" owner="evento_resource">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:10.842677" level="INFO">Executing JavaScript:
+document.querySelector("button[data-bs-target='#eventos-collapse']").click()
+Without any arguments.</msg>
+<arg>document.querySelector("button[data-bs-target='#eventos-collapse']").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.842454" elapsed="0.006041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>link:Inscrever-se</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T10:29:10.848609" elapsed="0.235093"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:10.842237" elapsed="0.241662"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:11.249847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_49.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.084809" elapsed="0.165130"/>
+</kw>
+<arg>Evidência_49.png</arg>
+<status status="PASS" start="2025-10-27T10:29:11.084276" elapsed="0.165734"/>
+</kw>
+<kw name="Ir para a página de &quot;Eventos&quot;" owner="evento_resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>link:Inscrever-se</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.250394" elapsed="0.007663"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:11.258269" level="INFO">Clicking element 'link:Inscrever-se'.</msg>
+<arg>link:Inscrever-se</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.258160" elapsed="0.444206"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:11.250182" elapsed="0.452521"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:11.839744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_50.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.704151" elapsed="0.135674"/>
+</kw>
+<arg>Evidência_50.png</arg>
+<status status="PASS" start="2025-10-27T10:29:11.703311" elapsed="0.136584"/>
+</kw>
+<kw name="Se inscrever no evento" owner="evento_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:11.840407" level="INFO">Clicking element 'xpath=//h5[contains(., 'Campanha do Agasalho 2025')]/ancestor::div[contains(@class, 'card')]//button[contains(., 'Inscrever-se')]'.</msg>
+<arg>xpath=//h5[contains(., 'Campanha do Agasalho 2025')]/ancestor::div[contains(@class, 'card')]//button[contains(., 'Inscrever-se')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.840290" elapsed="0.062412"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:12.282082" level="INFO">Current page contains text 'Inscrição feita com sucesso'.</msg>
+<arg>Inscrição feita com sucesso</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-27T10:29:11.903143" elapsed="0.379269"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:11.840072" elapsed="0.442624"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T10:29:12.443074" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_51.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Se%20inscrever%20em%20eventos/Screenshots/Teste_01/Evid%C3%AAncia_51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T10:29:12.283990" elapsed="0.159213"/>
+</kw>
+<arg>Evidência_51.png</arg>
+<status status="PASS" start="2025-10-27T10:29:12.283242" elapsed="0.160082"/>
+</kw>
+<kw name="Fechar navegador" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T10:29:12.443746" elapsed="0.077259"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:12.443525" elapsed="0.077605"/>
+</kw>
+<status status="PASS" start="2025-10-27T10:29:08.739731" elapsed="3.781585"/>
+</test>
+<status status="PASS" start="2025-10-27T10:29:08.628750" elapsed="3.893017"/>
+</suite>
+<status status="PASS" start="2025-10-27T10:29:08.628171" elapsed="3.894127"/>
+</suite>
+<status status="PASS" start="2025-10-27T10:29:08.616668" elapsed="3.905946"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste-Automatizados" id="s1" pass="1" fail="0" skip="0">Teste-Automatizados</stat>
+<stat name="Cenário: Se inscrever em eventos" id="s1-s1" pass="1" fail="0" skip="0">Teste-Automatizados.Cenário: Se inscrever em eventos</stat>
+<stat name="Evento Test" id="s1-s1-s1" pass="1" fail="0" skip="0">Teste-Automatizados.Cenário: Se inscrever em eventos.Evento Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
