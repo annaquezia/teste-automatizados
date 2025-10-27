@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on darwin)" generated="2025-10-26T21:03:49.064563" rpa="false" schemaversion="5">
+<suite id="s1" name="inativarUser testes" source="/Users/annasantos/Documents/github/teste-automatizados/Cenário - Inativar conta do usuário/inativarUser_testes.robot">
+<test id="s1-t1" name="TC1 - Inativar a conta de um usuário" line="7">
+<kw name="Abrir navegador" owner="inativarUser_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:49.164151" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php?common=2'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-26T21:03:49.164045" elapsed="6.319295"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-26T21:03:55.486152" elapsed="0.346804"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:49.163767" elapsed="6.669510"/>
+</kw>
+<kw name="Efetuar login" owner="inativarUser_resources">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-26T21:03:55.834145" elapsed="0.013348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:55.847804" level="INFO">Typing text 'annaquezia@email.com' into text field 'id=email'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${USER_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:55.847616" elapsed="0.090891"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:55.938762" level="INFO">Typing text '12345678' into text field 'id=password'.</msg>
+<arg>${SENHA_INPUT}</arg>
+<arg>${USER_SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:55.938616" elapsed="0.031818"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:55.970650" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<arg>${ENTRAR_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:55.970525" elapsed="0.039569"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:56.321183" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.010200" elapsed="0.311053"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:55.833799" elapsed="0.487511"/>
+</kw>
+<kw name="Selecionar &quot;Administrador&quot;" owner="inativarUser_resources">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ADMIN_BUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.321576" elapsed="0.006787"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:56.328557" level="INFO">Clicking button 'xpath=//aside[@id="sidebar"]//button[@data-bs-target="#admin-collapse"]'.</msg>
+<arg>${ADMIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.328443" elapsed="0.033447"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADMIN_COLLAPSE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.361999" elapsed="0.226948"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:56.773770" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.589176" elapsed="0.184660"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:56.321445" elapsed="0.452442"/>
+</kw>
+<kw name="Selecionar &quot;Visualizar usuários&quot;" owner="inativarUser_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${VIEW_USER_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.774135" elapsed="0.007236"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${VIEW_USER_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-10-26T21:03:56.781447" elapsed="0.259616"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.041667" level="INFO">Clicking element 'xpath=//aside[@id="sidebar"]//div[@id="admin-collapse"]//a[normalize-space(.)="Visualizar usuários"]'.</msg>
+<arg>${VIEW_USER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.041341" elapsed="0.077523"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.274893" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.119025" elapsed="0.155933"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:56.774016" elapsed="0.500993"/>
+</kw>
+<kw name="Selecionar &quot;inativar&quot;" owner="inativarUser_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${INATIVAR_USER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.275259" elapsed="0.007475"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.282930" level="INFO">Clicking element 'xpath=//tr[td[normalize-space(.)="Maristela Alice Almeida"]]//a[contains(., "Inativar")]'.</msg>
+<arg>${INATIVAR_USER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.282823" elapsed="0.067790"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.471551" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.351076" elapsed="0.120533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${USER_INATIVADO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.471706" elapsed="0.007561"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.580572" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.479370" elapsed="0.101258"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:57.275133" elapsed="0.305545"/>
+</kw>
+<kw name="Fechar navegador" owner="inativarUser_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.580981" elapsed="0.087338"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-26T21:03:57.668619" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-26T21:03:57.668532" elapsed="0.000151"/>
+</kw>
+<status status="PASS" start="2025-10-26T21:03:57.580859" elapsed="0.087872"/>
+</kw>
+<doc>Inativar a conta de um usuário por meio do perfil de administrador</doc>
+<status status="PASS" start="2025-10-26T21:03:49.163424" elapsed="8.505394"/>
+</test>
+<status status="PASS" start="2025-10-26T21:03:49.065743" elapsed="8.603456"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="inativarUser testes" id="s1" pass="1" fail="0" skip="0">inativarUser testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
