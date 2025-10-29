@@ -4,7 +4,7 @@ Resource    ../common.resource
 Library    SeleniumLibrary
 
 *** Test Cases ***
-Caso de teste 01: Realizar a inscrição em um evento
+TC1 - Realizar a inscrição em um evento
     Configurar pasta de screenshots    Cenário: Se inscrever em eventos/Screenshots/Teste_01
     Realizar Login Com Credenciais Corretas
     Registrar Evidência    Evidência_48.png

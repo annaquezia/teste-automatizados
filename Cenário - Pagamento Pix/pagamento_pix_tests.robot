@@ -4,7 +4,7 @@ Resource         common_pix.resource
 Resource         ../common.resource
 
 *** Test Cases ***
-Caso de teste 01: Preencher o campo de valor com um valor válido
+TC1 - Preencher o campo de valor com um valor válido
     Configurar pasta de screenshots    Cenário: Pagamento Pix/Screenshots/Teste_01
     Realizar Login Com Credenciais Corretas
     Registrar Evidência    Evidência_104.png
@@ -19,7 +19,7 @@ Caso de teste 01: Preencher o campo de valor com um valor válido
     Registrar Evidência    Evidência_108.png
     Fechar Navegador
 
-Caso de teste 02: Preencher o campo de valor com um valor inválido
+TC2 - Preencher o campo de valor com um valor inválido
     Configurar pasta de screenshots    Cenário: Pagamento Pix/Screenshots/Teste_02
     Realizar Login Com Credenciais Corretas
     Registrar Evidência    Evidência_109.png
@@ -34,7 +34,7 @@ Caso de teste 02: Preencher o campo de valor com um valor inválido
     Registrar Evidência    Evidência_113.png
     Fechar Navegador
 
-Caso de teste 03: Preencher o campo de valor com um valor em branco
+TC3 - Preencher o campo de valor com um valor em branco
     Configurar pasta de screenshots    Cenário: Pagamento Pix/Screenshots/Teste_03
     Realizar Login Com Credenciais Corretas
     Registrar Evidência    Evidência_114.png

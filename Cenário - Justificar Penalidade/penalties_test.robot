@@ -4,7 +4,7 @@ Resource    ../common.resource
 Library    SeleniumLibrary
 
 *** Test Cases ***
-Caso de teste 01: Registrar justificativa
+TC1 - Registrar justificativa
     Configurar pasta de screenshots    Cenário: Justificar Penalidade/Screenshots/Teste_01
     Realizar Login Com Credenciais Corretas
     Registrar Evidência    Evidência_01.png

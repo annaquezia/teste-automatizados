@@ -4,7 +4,7 @@ Test Setup  Abrir navegador
 Test Teardown   Fechar navegador
 
 *** Test Cases ***
-CT1 - Realizar o cancelamento de inscrição em um evento
+TC1 - Realizar o cancelamento de inscrição em um evento
     [Documentation]    Esse teste realiza o cancelamento de inscrição em um evento
     [Tags]    cancelar_inscricao
     Efetuar login
