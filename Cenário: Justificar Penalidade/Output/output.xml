@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-10-27T12:03:46.156134" rpa="false" schemaversion="5">
+<suite id="s1" name="PythonProject1" source="/Users/otavioaugusto/PycharmProjects/PythonProject1">
+<suite id="s1-s1" name="Cenário: Justificar Penalidade" source="/Users/otavioaugusto/PycharmProjects/PythonProject1/Cenário: Justificar Penalidade">
+<suite id="s1-s1-s1" name="Penalties Test" source="/Users/otavioaugusto/PycharmProjects/PythonProject1/Cenário: Justificar Penalidade/penalties_test.robot">
+<test id="s1-s1-s1-t1" name="Caso de teste 01: Registrar justificativa" line="7">
+<kw name="Configurar pasta de screenshots" owner="common">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${pasta}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-10-27T12:03:46.272755" elapsed="0.000275"/>
+</kw>
+<arg>Cenário: Justificar Penalidade/Screenshots/Teste_01</arg>
+<status status="PASS" start="2025-10-27T12:03:46.272159" elapsed="0.001013"/>
+</kw>
+<kw name="Realizar login com credenciais corretas" owner="common">
+<kw name="Abrir navegador e acessar página de login" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:46.273813" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/PROJETO/index.php?common=2'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T12:03:46.273663" elapsed="0.895011"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.169267" elapsed="0.365911"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:47.548880" level="INFO">Current page contains text 'Login'.</msg>
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.535358" elapsed="0.013605"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:46.273503" elapsed="1.275548"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:47.549567" level="INFO">Typing text 'admin@acalento.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${USUARIO_VALIDO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.549167" elapsed="0.090323"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:47.639978" level="INFO">Typing text 'fera4321' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${SENHA_VALIDA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.639669" elapsed="0.039692"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:47.680464" level="INFO">Clicking element 'class:btn-primary'.</msg>
+<arg>class:btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.680308" elapsed="0.030385"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-27T12:03:48.211897" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-27T12:03:47.710866" elapsed="0.501459"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.245885" level="INFO">Page title is 'Acalento | Home'.</msg>
+<arg>Acalento | Home</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.212958" elapsed="0.033278"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:46.273321" elapsed="1.973231"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.395964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_01.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.248695" elapsed="0.147361"/>
+</kw>
+<arg>Evidência_01.png</arg>
+<status status="PASS" start="2025-10-27T12:03:48.247620" elapsed="0.148504"/>
+</kw>
+<kw name="Abrir a página de penalidades" owner="penalties_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.396630" level="INFO">Clicking element 'link:MInhas penalidades'.</msg>
+<arg>link:MInhas penalidades</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.396491" elapsed="0.134804"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:48.396289" elapsed="0.135132"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.680750" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_02.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.532326" elapsed="0.148520"/>
+</kw>
+<arg>Evidência_02.png</arg>
+<status status="PASS" start="2025-10-27T12:03:48.531659" elapsed="0.149265"/>
+</kw>
+<kw name="Abrir os detalhes da penalidade" owner="penalties_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.681554" level="INFO">Clicking element 'xpath=//tr[td[contains(., '#4')]]//a[contains(., 'Ver mais')]'.</msg>
+<arg>xpath=//tr[td[contains(., '#4')]]//a[contains(., 'Ver mais')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.681366" elapsed="0.095674"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.784801" level="INFO">Current page contains text 'Justificar penalidade'.</msg>
+<arg>Justificar penalidade</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.777196" elapsed="0.007676"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:48.681141" elapsed="0.103811"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.923290" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_03.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_03.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.785377" elapsed="0.137991"/>
+</kw>
+<arg>Evidência_03.png</arg>
+<status status="PASS" start="2025-10-27T12:03:48.785134" elapsed="0.138305"/>
+</kw>
+<kw name="Preencher campo de justificativa" owner="penalties_resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:48.923968" level="INFO">Typing text 'Estava mal no dia' into text field 'inputJustification'.</msg>
+<arg>inputJustification</arg>
+<arg>${valor}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.923840" elapsed="0.030922"/>
+</kw>
+<arg>Estava mal no dia</arg>
+<status status="PASS" start="2025-10-27T12:03:48.923609" elapsed="0.031243"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:49.089851" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_04.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_04.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T12:03:48.955355" elapsed="0.134574"/>
+</kw>
+<arg>Evidência_04.png</arg>
+<status status="PASS" start="2025-10-27T12:03:48.955037" elapsed="0.134965"/>
+</kw>
+<kw name="Enviar justificativa" owner="penalties_resource">
+<kw name="Submit Form" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:49.090520" level="INFO">Submitting form 'None'.</msg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T12:03:49.090425" elapsed="0.039871"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:49.138095" level="INFO">Current page contains text 'Justificação enviada!'.</msg>
+<arg>Justificação enviada!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-27T12:03:49.130435" elapsed="0.007773"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:49.090197" elapsed="0.048102"/>
+</kw>
+<kw name="Registrar evidência" owner="common">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T12:03:49.254692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_05.png"&gt;&lt;img src="Cen%C3%A1rio%3A%20Justificar%20Penalidade/Screenshots/Teste_01/Evid%C3%AAncia_05.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${nome}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T12:03:49.139266" elapsed="0.115523"/>
+</kw>
+<arg>Evidência_05.png</arg>
+<status status="PASS" start="2025-10-27T12:03:49.138833" elapsed="0.116026"/>
+</kw>
+<kw name="Fechar navegador" owner="common">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T12:03:49.255263" elapsed="0.074631"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:49.255051" elapsed="0.074943"/>
+</kw>
+<status status="PASS" start="2025-10-27T12:03:46.271598" elapsed="3.058563"/>
+</test>
+<status status="PASS" start="2025-10-27T12:03:46.169896" elapsed="3.160639"/>
+</suite>
+<status status="PASS" start="2025-10-27T12:03:46.169337" elapsed="3.161723"/>
+</suite>
+<status status="PASS" start="2025-10-27T12:03:46.156938" elapsed="3.174513"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
+<stat name="Cenário: Justificar Penalidade" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.Cenário: Justificar Penalidade</stat>
+<stat name="Penalties Test" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.Cenário: Justificar Penalidade.Penalties Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
