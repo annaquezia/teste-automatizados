@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on darwin)" generated="2025-10-27T14:33:52.232433" rpa="false" schemaversion="5">
+<suite id="s1" name="fazerLogin testes" source="/Users/annasantos/Documents/github/teste-automatizados/Cenário - Fazer Login/fazerLogin_testes.robot">
+<test id="s1-t1" name="TC1 - Fazer login com conta existente" line="7">
+<kw name="Abrir navegador" owner="fazerLogin_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:52.329750" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T14:33:52.329641" elapsed="1.027238"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T14:33:53.359747" elapsed="0.663526"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:52.329362" elapsed="1.694181"/>
+</kw>
+<kw name="Selecionar o botão &quot;Entrar&quot; na home" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.024061" elapsed="0.014296"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.038602" level="INFO">Clicking element 'xpath=//a[normalize-space(.)="Entrar"]'.</msg>
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.038459" elapsed="0.241315"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:54.023844" elapsed="0.256107"/>
+</kw>
+<kw name="Digitar email válido" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.280508" elapsed="0.009395"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.290302" level="INFO">Typing text 'email@teste.com' into text field 'id=email'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL_VALIDO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.290056" elapsed="0.067159"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.488276" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.357401" elapsed="0.130940"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:54.280274" elapsed="0.208121"/>
+</kw>
+<kw name="Digitar senha válida" owner="fazerLogin_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.488757" level="INFO">Typing text 'Aa@12345' into text field 'id=password'.</msg>
+<arg>${SENHA_INPUT}</arg>
+<arg>${SENHA_VALIDA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.488650" elapsed="0.032210"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.604285" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.520958" elapsed="0.083385"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:54.488523" elapsed="0.115869"/>
+</kw>
+<kw name="Selecionar botão entrar" owner="fazerLogin_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:54.604726" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<arg>${ENTRAR_BUTTON_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.604633" elapsed="0.033113"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:55.293392" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:54.637846" elapsed="0.655675"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:54.604519" elapsed="0.689107"/>
+</kw>
+<kw name="Acessar página principal" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PAGINA_INICIAL_MENSAGEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.294124" elapsed="0.014494"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:55.316321" level="INFO">Element 'xpath=//h2[normalize-space(.)="Bem vindo!!!"]' is displayed.</msg>
+<arg>${PAGINA_INICIAL_MENSAGEM}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.308734" elapsed="0.007634"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:55.505980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.316489" elapsed="0.189548"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:55.293862" elapsed="0.212223"/>
+</kw>
+<kw name="Fechar navegador" owner="fazerLogin_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.506376" elapsed="0.082011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:55.588616" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.588515" elapsed="0.000129"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:55.506261" elapsed="0.082421"/>
+</kw>
+<doc>Realizar o login com uma conta existente no banco de dados</doc>
+<status status="PASS" start="2025-10-27T14:33:52.329027" elapsed="3.259740"/>
+</test>
+<test id="s1-t2" name="TC2 - Fazer login com conta inexistente" line="15">
+<kw name="Abrir navegador" owner="fazerLogin_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:55.589832" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T14:33:55.589697" elapsed="0.944131"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T14:33:56.534090" elapsed="0.355293"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:55.589533" elapsed="1.299941"/>
+</kw>
+<kw name="Selecionar o botão &quot;Entrar&quot; na home" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:56.890040" elapsed="0.012401"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:56.902748" level="INFO">Clicking element 'xpath=//a[normalize-space(.)="Entrar"]'.</msg>
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:56.902612" elapsed="0.372544"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:56.889691" elapsed="0.385597"/>
+</kw>
+<kw name="Digitar email inválido" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.275845" elapsed="0.013898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.290245" level="INFO">Typing text 'email@teste1.com' into text field 'id=email'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL_INVALIDO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.289881" elapsed="0.067035"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.476447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.357049" elapsed="0.119459"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.275563" elapsed="0.200998"/>
+</kw>
+<kw name="Digitar senha inválida" owner="fazerLogin_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.476921" level="INFO">Typing text 'Aa@54321' into text field 'id=password'.</msg>
+<arg>${SENHA_INPUT}</arg>
+<arg>${SENHA_INVALIDA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.476812" elapsed="0.043194"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.616758" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.520124" elapsed="0.096694"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.476690" elapsed="0.140188"/>
+</kw>
+<kw name="Selecionar botão entrar" owner="fazerLogin_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.617235" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<arg>${ENTRAR_BUTTON_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.617136" elapsed="0.037214"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.757553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.654460" elapsed="0.103186"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.617012" elapsed="0.140695"/>
+</kw>
+<kw name="Mensagem de erro" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENSAGEM_ERRO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.757977" elapsed="0.007755"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.771204" level="INFO">Element 'id:toastRuim' is displayed.</msg>
+<arg>${MENSAGEM_ERRO}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.765859" elapsed="0.005396"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.885969" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.771362" elapsed="0.114663"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.757843" elapsed="0.128233"/>
+</kw>
+<kw name="Fechar navegador" owner="fazerLogin_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.886368" elapsed="0.081084"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.967698" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.967600" elapsed="0.000124"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.886252" elapsed="0.081514"/>
+</kw>
+<doc>Realizar o login com uma conta inexistente no banco de dados</doc>
+<status status="PASS" start="2025-10-27T14:33:55.589176" elapsed="2.378660"/>
+</test>
+<test id="s1-t3" name="TC3 - Fazer login com os campos em branco" line="23">
+<kw name="Abrir navegador" owner="fazerLogin_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:57.969060" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Acalento/PROJETO/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T14:33:57.968911" elapsed="0.986880"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T14:33:58.956846" elapsed="0.349455"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:57.968752" elapsed="1.337771"/>
+</kw>
+<kw name="Selecionar o botão &quot;Entrar&quot; na home" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.306975" elapsed="0.012717"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.319956" level="INFO">Clicking element 'xpath=//a[normalize-space(.)="Entrar"]'.</msg>
+<arg>${ENTRAR_BUTTON_HOME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.319810" elapsed="0.188713"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:59.306774" elapsed="0.202002"/>
+</kw>
+<kw name="Deixar campo do email em branco" owner="fazerLogin_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.509763" elapsed="0.012980"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.522997" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL_BRANCO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.522839" elapsed="0.030638"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.651933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.553565" elapsed="0.098459"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:59.509553" elapsed="0.142523"/>
+</kw>
+<kw name="Deixar campo da senha em branco" owner="fazerLogin_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.652424" level="INFO">Typing text '' into text field 'id=password'.</msg>
+<arg>${SENHA_INPUT}</arg>
+<arg>${SENHA_BRANCO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.652322" elapsed="0.037464"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.819733" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.690063" elapsed="0.129728"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:59.652202" elapsed="0.167638"/>
+</kw>
+<kw name="Selecionar botão entrar" owner="fazerLogin_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.820173" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<arg>${ENTRAR_BUTTON_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.820078" elapsed="0.034036"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:33:59.948743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.854209" elapsed="0.094590"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:59.819960" elapsed="0.128888"/>
+</kw>
+<kw name="Fechar navegador" owner="fazerLogin_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T14:33:59.949137" elapsed="0.079017"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-27T14:34:00.028374" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-27T14:34:00.028282" elapsed="0.000119"/>
+</kw>
+<status status="PASS" start="2025-10-27T14:33:59.949013" elapsed="0.079424"/>
+</kw>
+<doc>Tentar realizar o login com os campos de e-mail e senha em branco</doc>
+<status status="PASS" start="2025-10-27T14:33:57.968282" elapsed="2.060210"/>
+</test>
+<status status="PASS" start="2025-10-27T14:33:52.233208" elapsed="7.795612"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="fazerLogin testes" id="s1" pass="3" fail="0" skip="0">fazerLogin testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
